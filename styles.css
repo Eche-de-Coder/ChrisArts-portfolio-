@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, grey, black);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 10%;
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+nav ul .dropdown {
+    position: relative;
+}
+
+nav ul .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+nav ul .dropdown-menu li {
+    padding: 10px;
+}
+
+nav ul .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #E63946;
+}
+
+.animated-text {
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    from { transform: translateY(0); }
+    to { transform: translateY(-535px); }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, grey, black);
+    color: white;
+    position: relative;
+}
+
+/* WhatsApp Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: #25D366;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #128C7E;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10%;
+    background-color: #F8F9FA;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #A6A6A6;
+    color: white;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 50px 10%;
+    background: white;
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+}
+
+.testimonial {
+    display: none;
+    font-size: 1.2em;
+    font-style: italic;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+
+.portfolio {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 10px 20px 10px;
+}
+
+.portfolio-grid {
+    display: flex;
+}
+
+.portfolio-item {
+    background-color white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
