@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Arts portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header id="stickyHeader">
+        <div class="log">
+            <b>Chris<br>Arts™</b>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">. . .</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img class="logo" src="/storage/emulated/0/Documents/pixelLab/20250323_190155.png">
+        <div class="float">
+            <h1 class="span">Graphics and Web designer's</h1>
+            <p class="nofloat">
+                Professional and creative graphics and web design solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <fieldset id="services" class="services">
+        <legend><h2>What We Do</h2></legend>
+        <div class="service-card">
+            <h3>Branding</h3>
+            <p>
+                Build a strong and recognizable brand.
+            </p>
+        </div>
+        <div class="service-card">
+            <h3>Web Design</h3>
+            <p>
+                Modern and responsive website designs.
+            </p>
+        </div>
+        <div class="service-card">
+            <h3>Graphic<br>Designs</h3>
+            <p>
+                Creative custom designs for your business.
+            </p>
+        </div>
+    </fieldset>
+
+    <!-- Testimonials Section -->
+    <fieldset id="testimonials" class="testimonials">
+        <legend><h2>What Clients Say</h2></legend>
+        <div class="testimonial-container">
+            <div class="testimonial active">
+                "Fantastic work! My brand looks amazing now." - Mr Philip
+            </div>
+            <div class="testimonial">
+                "Highly recommend! The website design exceeded my expectations." - Austine Young
+            </div>
+            <div class="testimonial">
+                "Great creativity and attention to detail!" - Dev Gamer
+            </div>
+        </div>
+    </fieldset>
+
+    <!-- Portfolio Section -->
+    <fieldset id="portfolio" class="portfolio">
+        <legend><h2>Recent Work</h2></legend>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="" class="project">Project 1</a>
+            </div>
+            <div class="portfolio-item">
+                <a href="" class="Project">Project 2</a>
+            </div>
+            <div class="portfolio-item">
+                <a href="" class="Project">Project 3</a>
+            </div>
+        </div>
+    </fieldset>
+    
+    <fieldset id="sendDM" class="sendDm">
+            <legend><h2>Send a DM</h2></legend>
+        <input id="name" type="text" placeholder="Your name" required><br>
+        <textarea id="message" placeholder="Message" rows="3" cols="20" required></textarea><br>
+        <button id="sendBtn" type="button">Send</button>
+    </fieldset>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="icons">
+            <a href="#">
+                <img class="icon icon1" src="Screenshot_20250318-071824_1.jpg">
+            </a>
+
+            <a href="https://github.com/Echezona23">
+                <img class="icon icon2" src="Screenshot_20250318-071749_2.jpg">
+            </a>
+
+            <a href="https://www.linkedin.com/in/onuigbo-echezonachukwu-174676346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img class="icon icon3" src="Screenshot_20250318-072121_1.jpg">
+            </a>
+
+            <a href="https://wa.me/2348022839391?text=Hello!%20Chris%20I'm%20interested%20in%20your%20graphics%20and%20web%20design%20services." target="_blank">
+                <img class="icon icon4" src="Screenshot_20250318-071938_2.jpg">
+            </a>
+        </div>
+        <p class="rights">
+            &copy; 2025 MyDesign. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
