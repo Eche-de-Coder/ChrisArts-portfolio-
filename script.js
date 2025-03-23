@@ -24,3 +24,20 @@ function showNextTestimonial() {
 }
 
 setInterval(showNextTestimonial, 3000);
+
+
+document.getElementById("sendBtn").addEventListener("click", function() {
+        let name = document.getElementById("name").value.trim();
+        let message = document.getElementById("message").value.trim();
+        
+        if (name === "" || message === "") {
+            alert("Please enter your name and message.");
+            return;
+        }
+        
+        let phoneNumber = "YOUR_WHATSAPP_NUMBER"; // Replace with your WhatsApp number in international format (e.g., 234XXXXXXXXXX for Nigeria)
+        let whatsappURL = `https://wa.me/${phoneNumber}?text=Hello, my name is ${encodeURIComponent(name)}.%0A${encodeURIComponent(message)}`;
+
+        window.open(whatsappURL, "_blank");
+});
+    
