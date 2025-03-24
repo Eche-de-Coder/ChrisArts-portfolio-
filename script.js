@@ -35,7 +35,7 @@ document.getElementById("sendBtn").addEventListener("click", function() {
             return;
         }
         
-        let phoneNumber = "YOUR_WHATSAPP_NUMBER"; // Replace with your WhatsApp number in international format (e.g., 234XXXXXXXXXX for Nigeria)
+        let phoneNumber = "2348022839391"; // Replace with your WhatsApp number in international format (e.g., 234XXXXXXXXXX for Nigeria)
         let whatsappURL = `https://wa.me/${phoneNumber}?text=Hello, my name is ${encodeURIComponent(name)}.%0A${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
